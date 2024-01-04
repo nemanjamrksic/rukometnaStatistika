@@ -1,0 +1,167 @@
+.pozadina {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pretraga {
+  
+  width: 60%;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+}
+.pretraga input {
+  background-color: var(--searchBoja);
+  color:var(--tekst);
+  font-size: 25px;
+  width: 100%;
+  box-shadow: 2px 2px rgb(27,27,27);
+}
+.topVesti {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+  z-index: 1;
+}
+.topVesti div button{
+  z-index: 1 !important;
+}
+.carouselContent {
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(211, 211, 211);
+}
+.carouselContent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: inherit;
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 3em;
+  padding: 20px;
+  border-radius: 10px;
+}
+.title:hover {
+  cursor: pointer;
+}
+.vestContainer {
+  border: solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  display: flex;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  width: 80%;
+  position: relative;
+  border-radius: 15px;
+}
+.slikaDiv img {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px 0 0 15px;
+ 
+}
+.slikaDiv {
+  height: 200px;
+  border-radius: 14px 0 0 14px;
+  display: flex;
+  flex-direction: column;
+}
+.sadrzajDiv {
+  color: var(--tekst);
+  flex: 1;
+  background: var(--vestiPozadina);
+  border-radius: 0 15px 15px 0;
+
+  padding: 5px;
+  height: 200px;
+  overflow: hidden;
+}
+.naslov {
+  font-size: 2em;
+  margin:5px;
+  font-weight: 600;
+  margin-right: 40px;
+}
+.naslov:hover {
+  color: gray;
+  cursor: pointer;
+}
+.kratakOpis {
+  font-size: 1em;
+  margin: 5px;
+}
+.datum {
+  margin:5px;
+  font-size: 0.75em;
+}
+.star {
+  width: 40px;
+  aspect-ratio: 1;
+  fill: transparent;
+  stroke: gold;
+  stroke-width: 1;
+  transition: fill 0.5s ease-in-out;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.star:hover, .starFilled:hover {
+  cursor: pointer;
+}
+.starFilled {
+  width:40px;
+  fill: gold;
+  stroke: rgba(0, 0, 0, 0.315);
+  stroke-width: 1;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .pretraga {
+    width: 80%;
+  }
+  .vestContainer {
+    flex-direction: column;
+  }
+  .slikaDiv {
+    width: 100%;
+    height: auto;
+  }
+  .slikaDiv img {
+    width: 100%;
+    border-radius: 15px 15px 0 0px;
+    border-left: solid black;
+    border-right: solid black;
+    border-top: solid black;
+    border-bottom: none;
+  }
+  .sadrzajDiv {
+    border-radius: 0 0px 15px 15px;
+    border-right: solid black;
+    border-bottom: solid black;
+    border-left: solid black;
+    border-top: none;
+
+    overflow: hidden;
+  }
+}

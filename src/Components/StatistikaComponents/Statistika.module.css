@@ -1,0 +1,81 @@
+.pozadina{
+  width: 100%;
+  padding-top: 30px;
+}
+
+.naslov{
+  color: rgb(211, 211, 211);
+  text-align: center;
+  background: var(--tabelaZaglavljeBorder);
+  width: 50%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+.kriterijumParagraf{
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(211, 211, 211);
+  text-align: center;
+  background: var(--tabelaZaglavljeBorder);
+  margin: 15px;
+  width: 40%;
+  border-radius: 10px;
+  margin-right: auto;
+}
+.tabelaStatistika {
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 10px; 
+  width: 100%;
+  overflow: hidden; 
+  margin: 10px;
+}
+
+
+.tabelaStatistika thead {
+  background-color: var(--tabelaZaglavljeBorder);
+  color: rgb(211, 211, 211); 
+}
+
+
+.tabelaStatistika tbody tr:nth-child(odd) {
+  background-color: var(--tabelaNeparan)
+}
+
+.tabelaStatistika tbody tr:nth-child(even) {
+  background-color: var(--tabelaParan);
+}
+
+.tabelaStatistika tbody td:nth-of-type(2):hover, .tabelaStatistika tbody td:nth-of-type(3):hover{
+  font-weight: 600;
+  cursor: pointer;
+}
+.tabelaStatistika td {
+  border-left: 2px solid var(--tabelaZaglavljeBorder); /* Border between td elements */
+  padding: 8px;
+  text-align: center;
+}
+
+.tabelaStatistika td:first-child {
+  border-left: none;
+}
+.tabeleWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.dete {
+  flex-grow: 1;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  
+  .naslov{
+    width: 80%;
+  }
+}

@@ -1,0 +1,217 @@
+.NavigacijaISearch {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  z-index: 2;
+  box-shadow: 2px 2px rgb(27, 27, 27);
+}
+.searchWrapper {
+  background-color: var(--navigacijaTamnija);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchWrapper input {
+  background-color: var(--searchBoja);
+  width: 40%;
+  color: var(--tekst);
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0.5px solid rgb(211, 211, 211);
+  margin: 10px;
+  padding: 3px;
+  padding-inline: 10px;
+}
+.EkipeIgraci {
+  background-color: var(--navigacijaTamnija);
+}
+.IgraciEkipe {
+  background-color: var(--searchBoja);
+  top: 42px;
+  width: 40%;
+  position: fixed;
+  border-radius: 0 0 10px 10px;
+}
+.IgraciEkipe p {
+  width: 100%;
+  color: rgb(211, 211, 211);
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.Link {
+  color: var(--tekst);
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+}
+
+.Link:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+.navigacijaWrapper {
+  background-color: var(--navigacijaSvetlija);
+  width: 100%;
+}
+.navigacija {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  align-items: center;
+}
+.navigacija li {
+  margin: 10px;
+}
+.navigacija li:nth-of-type(1) {
+  margin-right: auto;
+}
+.navigacija li:last-of-type {
+  margin-left: auto;
+}
+
+.LogoutButton {
+  text-decoration: none;
+  color: var(--tekst);
+  padding: 5px;
+  background: transparent;
+  border: none;
+  display: block;
+  font-size: 16px;
+}
+.LogoutButton:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
+.Aktivno {
+  border-bottom: solid var(--tekst);
+}
+.DugmeSkriveno {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: transparent;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  display: none;
+  z-index: 3;
+}
+.DugmeSkriveno:hover {
+  cursor: pointer;
+}
+.hamburger {
+  fill: rgb(211, 211, 211);
+}
+.DugmeSkriveno .Rect {
+  transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  transform-origin: center;
+}
+.DugmeSkriveno[aria-expanded="true"] .Rect {
+  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+}
+.DugmeSkriveno[aria-expanded="true"] :is(.TopRect, .BotRect) {
+  y: 45;
+}
+.DugmeSkriveno[aria-expanded="true"] .TopRect {
+  rotate: 45deg;
+}
+.DugmeSkriveno[aria-expanded="true"] .MidRect {
+  opacity: 0;
+}
+.DugmeSkriveno[aria-expanded="true"] .BotRect {
+  rotate: -45deg;
+}
+
+.izborTakmicenjaPopUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Background color of the centered div */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  min-width: 40%;
+  text-align: center;
+}
+
+.izborTakmicenjaPopUp button {
+  margin: 10px;
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  color: #293241 
+}
+.izborTakmicenjaPopUp > button:hover{
+  cursor: pointer;
+}
+
+.pozadinaPopUp {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 860px) {
+  .searchWrapper {
+    flex-direction: column;
+  }
+  .searchWrapper input {
+    width: 60%;
+  }
+  .IgraciEkipe {
+    width: 60%;
+  }
+
+  .DugmeSkriveno {
+    display: block;
+  }
+  .navigacijaWrapper {
+    top: 53px;
+    height: calc(100% - 53px);
+    position: fixed;
+    width: 350px;
+    right: 0;
+    background-color: var(--navigacijaSvetlija);
+    backdrop-filter: blur(0.2rem);
+    transition: 0.5s ease-out;
+  }
+  .navigacijaWrapper[datavisible="false"] {
+    transform: translateX(100%);
+  }
+  .navigacija {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .navigacija li {
+    margin: 5px;
+  }
+  .navigacija li:nth-of-type(1) {
+    margin-right: initial;
+  }
+  .navigacija li:last-of-type {
+    margin-left: 10px;
+  }
+
+  .izborTakmicenjaWrapper{
+    right: 50px;
+  }
+}

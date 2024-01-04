@@ -1,0 +1,142 @@
+.pozadina{
+    width: 100%;
+    padding: 20px;
+  }
+  .grbNazivWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .grbNazivWrapper img{
+    max-width: 20%;
+  }
+  .naslov, .takmicenje{
+    color: rgb(211, 211, 211);
+    text-align: center;
+    background: var(--tabelaZaglavljeBorder);
+    margin: 30px;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .takmicenje{
+    font-size: 1.5em;
+  }
+  .tabelaStatistika {
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px; 
+    width: 80%;
+    overflow: hidden; 
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .tabelaStatistika thead {
+    background-color: var(--tabelaZaglavljeBorder) ;
+    color: rgb(211, 211, 211); 
+  }
+  
+  
+  .tabelaStatistika tbody tr:nth-child(odd) {
+    background-color: var(--tabelaNeparan);
+  }
+  
+  .tabelaStatistika tbody tr:nth-child(even) {
+    background-color: var(--tabelaParan);
+  }
+  
+  .tabelaStatistika tbody tr:hover {
+    background-color: var(--tabelaHover);
+    cursor: pointer;
+  }
+  .tabelaStatistika td {
+    text-align: left;
+    border-left: 2px solid var(--tabelaZaglavljeBorder); /* Border between td elements */
+    padding: 10px;
+  }
+  
+  .tabelaStatistika td:first-child {
+    border-left: none;
+  }
+  .tabelaStatistika tr td:not(:nth-child(1)){
+    text-align: center;
+  }
+  .tabelaRaspored {
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    width: 80%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tabelaRaspored thead {
+    background-color: var(--tabelaZaglavljeBorder); /* Header background color */
+    color: rgb(211, 211, 211); /* Header text color */
+  }
+  
+  .tabelaRaspored tbody tr:nth-child(odd) {
+    background-color: var(--tabelaNeparan); /* Odd row color */
+  }
+  
+  .tabelaRaspored tbody tr:nth-child(even) {
+    background-color: var(--tabelaParan); /* Even row color */
+  }
+  
+  .tabelaRaspored td {
+    border-left: 2px solid var(--tabelaZaglavljeBorder); /* Border between td elements */
+    padding: 8px;
+    text-align: center;
+  }
+  .tabelaRaspored tbody tr:hover {
+    background-color: var(--tabelaHover);
+    cursor: pointer;
+  }
+  
+  .tabelaRaspored td:first-child {
+    border-left: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .tabelaStatistika td{
+        border: none;
+        display: grid;
+        grid-template-columns: 15ch auto;
+    }
+    .tabelaStatistika tr td{
+      text-align: center;
+    }
+    .tabelaStatistika td::before{
+        font-weight: 700;
+        text-align: right;
+    }
+    .tabelaStatistika td:nth-of-type(1)::before{
+        content: "Ime i prezime: ";
+    }
+    .tabelaStatistika td:nth-of-type(2)::before{
+        content: "Broj golova: ";
+    }
+    .tabelaStatistika td:nth-of-type(3)::before{
+        content: "Isključenja: ";
+    }
+    .tabelaStatistika td:nth-of-type(4)::before{
+        content: "Broj crvenih: ";
+    }
+    .tabelaStatistika td:nth-of-type(5)::before{
+        content: "Igrač utakmice: ";
+    }
+    .tabelaStatistika thead{
+        display: none;
+    }
+   .grbNazivWrapper{
+    flex-direction: column;
+   }
+  }

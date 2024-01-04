@@ -1,0 +1,255 @@
+/* Izbor postava*/
+.odabirPostavaWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.izborIgracaWrapper {
+  flex-grow: 1;
+  max-width: 400px;
+  border-radius: 10px;
+  border: solid var(--tekst);
+  margin: 20px;
+  background: rgb(211, 211, 211, 0.8);
+  padding: 15px;
+}
+
+.igracWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.igracCB {
+  margin-right: auto;
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.igracCB p {
+  margin-left: 10px;
+}
+.dresInput {
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: auto;
+  border-radius: 5px;
+  height: 30px;
+}
+.izborIgracaButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.pokreniZapisnikButton {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 30px;
+  height: 60px;
+  border-radius: 10px;
+  width: 150px;
+}
+
+/* Zapisnik */
+.rezultatWrapper {
+  width: 80%;
+  border-radius: 20px;
+  border: 2px solid var(--tabelaZaglavljeBorder);
+  margin: 20px auto;
+  background: var(--tabelaNeparan);
+  display: flex;
+  justify-content: space-between;
+}
+.imeGrb {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  width: 35%;
+}
+.imeGrb img {
+  width: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
+}
+.imeGrb p,
+.rezultat p {
+  font-size: clamp(1rem, -0.875rem + 6vw, 2rem);
+  font-weight: 600;
+  text-align: center;
+  margin: 5px;
+}
+.rezultat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+}
+.zapisnikWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.promenaRezultataWrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tabelaStatistika {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.tabelaStatistika thead {
+  background-color: var(--tabelaZaglavljeBorder);
+  color: rgb(211, 211, 211);
+}
+
+.tabelaStatistika tbody tr:nth-child(odd) {
+  background-color: var(--tabelaNeparan);
+}
+
+.tabelaStatistika tbody tr:nth-child(even) {
+  background-color: var(--tabelaParan);
+}
+
+.tabelaStatistika td {
+  font-size: clamp(0.6em, -1rem + 4vw, 1em);
+  text-align: left;
+  border-left: 2px solid var(--tabelaZaglavljeBorder); /* Border between td elements */
+  padding: clamp(2px, -1rem + 4vw, 10px);
+}
+
+.tabelaStatistika td:first-child {
+  border-left: none;
+}
+
+.postaviZapisnikButton {
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.buttonGol {
+  background-color: transparent;
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-image: url("../../Helpers/icons/goal.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.buttonDisk {
+  background-color: transparent;
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-image: url("../../Helpers/icons/redCard.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.buttonOpomena {
+  background-color: transparent;
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-image: url("../../Helpers/icons/yellowCard.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.buttonIskljucenje {
+  background-color: transparent;
+  height: 2.5em;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+}
+.MVP td {
+  background-color: rgb(255, 223, 0);
+}
+.izborMVP:hover td {
+  background-color: rgba(255, 217, 0, 0.856);
+  cursor: pointer;
+}
+
+/* Timer */
+.playButton {
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-color: transparent;
+  background-image: url("../../Helpers/icons/play.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.pauseButton {
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-color: transparent;
+  background-image: url("../../Helpers/icons/pause.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.editTimeButton {
+  height: 2.5em;
+  aspect-ratio: 1;
+  background-color: transparent;
+  background-image: url("../../Helpers/icons/editTime.png"); /* Replace 'your-image-file.jpg' with the name of your image file */
+  background-size: cover; /* Adjust as needed */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.timerWrapper {
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timerPopUp {
+  background-color: #fff; /* Background color of the centered div */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  text-align: center;
+}
+.timerPopUp * {
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.pozadinaPopUp {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Adjust the z-index as needed */
+}

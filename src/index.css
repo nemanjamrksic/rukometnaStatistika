@@ -1,12 +1,38 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+  background-image: url(./Helpers/icons/pozadinaDark.jpg);
+  --tekst : rgb(211, 211, 211);
+  --tabelaParan: #e6e6e6;
+  --tabelaNeparan: #f2f2f2;
+  --tabelaZaglavljeBorder: #333;
+  --tabelaHover: #a6b1e1;
+  --navigacijaTamnija: rgb(27, 27, 27);
+  --navigacijaSvetlija: rgba(41, 41, 41, 0.8);
+  --vestiPozadina: rgba(41, 41, 41, 0.8);
+  --searchBoja:rgb(66, 66, 66);
+}
+.lightMode{
+  background-image:url(./Helpers//icons/pozadinaLight.jpeg);
+  --tekst : #293241;
+  --tabelaParan: #c6e3f3;
+  --tabelaNeparan: #e0fbfc;
+  --tabelaZaglavljeBorder: #3d5a80;
+  --tabelaHover: #ee6c4d;
+  --navigacijaTamnija: #3d5a80;
+  --navigacijaSvetlija: #98c1d9ce;
+  --vestiPozadina: #98c1d9ce;
+  --searchBoja : #e0fbfc;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -1,0 +1,189 @@
+.pozadina{
+
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nazivTakmicenja{
+  border-radius: 20px;
+  padding: 10px;
+  width: 60%;
+  font-size: 2em;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.invisibleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  margin: 30px;
+  margin-left: 0;
+}
+.EkipaPopUp {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: rgb(211, 211, 211, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
+}
+.EkipaPopUp button:hover{
+  cursor: pointer;
+}
+.NazivEkipe{
+  width: 60%;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.NazivSlika{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.grbWrapper{
+  width: 30%;
+}
+.grbWrapper img{
+  width: 100%;
+}
+.grbWrapper button{
+  width: 100%;
+  aspect-ratio: 1;
+}
+.grbWrapper button:hover,
+.grbWrapper img:hover {
+  cursor: pointer;
+}
+
+.izaberiPostojeceButton{
+  margin-top: 20px;
+  align-self: flex-end;
+  width: 50%;
+  border-radius: 5px;
+}
+.ListaIgraca {
+  width: 95%;
+  border: dashed black;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.Igrac{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}
+.Igrac input{
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin: 5px;
+}
+.SacuvajButton{
+  margin: 10px;
+  flex-grow: 1;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  color:rgb(211, 211, 211)
+}
+.ekipaMini{
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+  border: solid black;
+  margin: 20px 0;
+}
+.ekipaMini:hover{
+  cursor: pointer;
+}
+.postojecePostavePopUp {
+  background-color: #fff; /* Background color of the centered div */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 90%;
+}
+.pozadinaPopUp {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Adjust the z-index as needed */
+}
+.timDDL{
+  border-radius: 10px;
+  width: 50%;
+  font-size: 1em;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.postojeciIgraci p{
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.dugmePostojecePopUp{
+  margin: 10px;
+  padding: 5px;
+  color: rgb(211, 211, 211);
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.dugmePostojecePopUp:hover{
+  cursor: pointer;
+}
+.KreirajTakmicenjeButton{
+  background-color: #06722f;
+  width: 40%;
+  color:rgb(211, 211, 211);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+.KreirajTakmicenjeButton:hover{
+  cursor: pointer;
+}
+@media only screen and (max-width: 650px) {
+  .EkipaPopUp{
+    width: 90%;
+  }
+  .nazivTakmicenja{
+    width: 85%;
+  }
+  .NazivSlika{
+    flex-direction: column;
+  }
+  .NazivSlika input{
+    width: 80%;
+    text-wrap: wrap;
+  }
+  .grbWrapper{
+    width: 60%;
+    margin: 10px;
+  }
+}

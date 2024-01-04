@@ -1,0 +1,146 @@
+.pozadina {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.naslov{
+    color:#293241;
+    font-size: 1.5em;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(211, 211, 211);
+    border: none;
+    box-shadow: 0 0 10px black;
+}
+.izaberiSlikuButton{
+    margin-top: 20px;
+    border-radius: 10px;
+    color:#293241;
+    background: rgb(211, 211, 211);
+    width:100%;
+    aspect-ratio:16/9;
+}
+.slika{
+    width: 60%;
+    margin: 30px;
+    border-radius: 10px;
+}
+.slika:hover{
+    cursor: pointer;
+}
+.kratakOpis{
+    color:#293241;
+    width: 60%;
+    margin: 30px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(211, 211, 211);
+    font-size: 15px;
+    height: 150px;
+    resize: none;
+    min-height: 150px;
+}
+
+
+.paragraf{
+    color:#293241;
+    width: 60%;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(211, 211, 211);
+    font-size: 15px;
+    min-height: 20px;
+    box-shadow: 0 0 10px black;
+}
+.sadrzaj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.stavkaWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dugmiciOrganizacija{
+    display: flex;
+    flex-direction: column;
+}
+.dugmiciOrganizacija button{
+    width: 30px;
+    aspect-ratio: 1;
+}
+.dugmiciOrganizacija button:hover{
+    cursor: pointer;
+}
+.komande{
+    display: flex;
+}
+.komande button{
+    color:#293241;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(211, 211, 211);
+    width: 150px;
+    height: 75px;
+    margin: 20px;
+    box-shadow: 0 0 10px black;
+    border: none;
+}
+.komande button:hover{
+    cursor: pointer;
+}
+
+
+.pozadinaPopUp {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  
+  .PopUp {
+    flex-direction: column;
+    max-height: 80vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Styles for the pop-up container */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle elevation effect */
+    
+  }
+  .PopUp button{
+    border-radius: 5px;
+    width: 220px;
+    height: 60px;
+    margin: 20px;
+  }
+  /* Additional styles for Cropper can be added here */
+  @media only screen and (max-width: 650px) {
+    .komande{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .komande button{
+        width: 60%;
+    }
+  }

@@ -1,0 +1,19 @@
+.notFoundWrapper {
+  margin-top: 30px;
+  height: clamp(150px, 20vw, 400px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paragraf {
+  font-size: clamp(150px, 20vw, 400px);
+  line-height: 1;
+  margin: 0;
+  font-weight: 600;
+}
+
+.lopta {
+  height: 100%;
+  max-width: 100%;
+}
