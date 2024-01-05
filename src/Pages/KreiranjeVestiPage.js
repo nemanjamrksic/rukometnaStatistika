@@ -52,7 +52,7 @@ const KreiranjeVestiPage = () => {
       };
 
       firebaseUpload(vest, "vesti");
-      navigate("/notFound");
+      navigate("/pocetna");
     }
   }
   function dodajParagraf() {
